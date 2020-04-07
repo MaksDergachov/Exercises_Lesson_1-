@@ -16,12 +16,15 @@ d = b ** 2 - 4 * a * c
 puts d
 
 if d>0
-    
-Не знаю, пока не придумал
+  x1 = (-b - Math.sqrt(d))/ 2 * a
+      puts x1
+    x2 = (-b + Math.sqrt(d))/ 2 * a
+      puts x2
     
 elsif d == 0
     
-Не знаю, пока не придумал
+      x = -b / 2 * a 
+      puts x
     
 else 
     
