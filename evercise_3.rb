@@ -1,5 +1,8 @@
 puts "Введите 3 числа"
-a = gets.chomp.to_i
-b = gets.chomp.to_i
-c = gets.chomp.to_i
-print (a+b+c)/3
+a = gets.to_f
+b = gets.to_f
+c = gets.to_f
+
+d = (a + b + c) / 3
+
+puts d.to_s
