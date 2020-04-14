@@ -8,12 +8,11 @@
 =end
 
 puts "Введите числа для квадратного уравнения (ax^2 + bx + c = 0)"
-a = gets.chomp.to_i
-b = gets.chomp.to_i
-c = gets.chomp.to_i
+a = gets.chomp.to_f
+b = gets.chomp.to_f
+c = gets.chomp.to_f
 
-d = b ** 2 - 4 * a * c
-puts d
+d = b ** 2 - (4 * a * c)
 
 if d>0
   x1 = (-b - Math.sqrt(d))/ 2 * a
@@ -23,7 +22,7 @@ if d>0
     
 elsif d == 0
     
-      x = -b / 2 * a 
+      x = -b / 2 * a
       puts x
     
 else 
