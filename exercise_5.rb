@@ -7,20 +7,14 @@
 =end
 
 
-fib1 = 1
-fib2 = 1
- puts fib1 
- puts fib2
+a = gets.chomp.to_i
 
-n = gets.chomp.to_i
-
-i = 0
-while i < n 
-    fib_sum = fib1 + fib2
-    fib1 = fib2
-    fib2 = fib_sum
-    i = i + 1
- 
-puts sum
-
+def fib(a)
+   if a < 3
+      1
+   else 
+      fib(a-1) + fib(a-2)
+   end 
 end
+
+(1..a).each { |a| puts fib(a)}
